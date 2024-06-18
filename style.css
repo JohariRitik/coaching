@@ -1,0 +1,96 @@
+.container-xxl-12{
+    display:grid;
+    grid-template-columns: 3fr 3fr;
+    background-color: #3652AD;
+    animation-name: example;
+    animation-duration: 4s;
+    }
+  body{
+    background-color: #280274;
+  }
+h1{
+  color:white;
+  display: inline-block;
+  text-align: center;
+  justify-content:center;
+  background-color: #280274;
+}
+.navbar{
+    height:60px;
+}
+.courses{
+    display:grid;
+    margin-left: 20px;
+    grid-template-columns:300px 300px;
+    grid-template-rows: 350px 350px;
+    gap:10px;
+  }
+.notifications{
+    background-color: rgb(205, 238, 194);
+    width:600px;
+    border:10px solid #280274;
+    border-radius: 15px;
+    
+
+}
+.footer{
+
+}
+@keyframes example {
+    from {background-color:#3652AD;}
+    to {background-color: #280274;}
+  }
+  .card{
+    box-shadow: 10px 10px;
+    
+  }
+  button{
+    transition: width 2s, height 4s;
+  }
+.card{
+  margin:20px;]
+}
+.card img{
+  height:150px;
+}
+.carousel-item img{
+  height:300px;
+
+}
+blink {
+  animation: blinker 1.5s linear infinite;
+  color: red;
+  font-family: sans-serif;
+}
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
+$carousel-control-color:             $white;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+
+$carousel-indicator-width:           30px;
+$carousel-indicator-height:          3px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-bg:       $white;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .6s ease;
+
+$carousel-caption-width:             70%;
+$carousel-caption-color:             $white;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            1.25rem;
+
+$carousel-control-icon-width:        2rem;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+$carousel-transition-duration:       .6s;
+$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
